@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  height: 100px;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-section img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-section .separator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.hero-section .rectangle {
+  height: 2px;
+  width: 100%;
+  background-color: #a08963;
+}
+
+.hero-section .circle {
+  height: 8px;
+  width: 8px;
+  background-color: #a08963;
+  flex-shrink: 0; /* Garante que o círculo permaneça perfeito em qualquer tamanho de tela */
+  border-radius: 99999px;
+}
+
+.hero-section p {
+  font-family: "Lexend", sans-serif;
+  width: 500px;
+  height: auto;
+  text-justify: auto;
+  text-align: justify;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 350px;
+  height: fit-content;
+  width: 100%;
+}
+
+.about .coffee {
+  display: contents; /* faz os filhos diretos participar do grid pai*/
+}
+
+.about .coffee img {
+  display: grid;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 1;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.about .coffee .text {
+  display: grid;
+  width: 100%;
+  background: #c9b194;
+  grid-row: 1;
+  grid-column: 2 / span 2;
+}
+
+/* .about .area img {
+  display: grid;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.about .area .text {
+  display: grid;
+  width: 100%;
+  grid-row: 1;
+  grid-column: 3;
+  background: #c9b194;
+} */
