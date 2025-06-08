@@ -10,6 +10,55 @@ body {
 
 header {
   height: 100px;
+  padding: 13.5px;
+}
+
+h1 {
+  color: #a08963;
+  font-family: "Lexend";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+nav ul li {
+  color: #a08963;
+  font-family: "Lexend";
+  font-size: 12;
+}
+
+nav ul {
+  display: flex;
+  gap: 68px;
+  list-style-type: none;
+}
+
+
+.principal-header {
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 13px;
+  padding-right: 13px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #a08963;
 }
 
 .hero-section {
@@ -87,6 +136,33 @@ header {
   background: #c9b194;
   grid-row: 1;
   grid-column: 2 / span 2;
+}
+
+
+footer {
+  background-color: #a08963;
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Lexend";
+  font-size: 16px;
+  align-items: center;
+  padding: 27px;
+}
+
+footer .marca {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+}
+
+footer .marca .nome-marca{
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
 }
 
 /* .about .area img {
