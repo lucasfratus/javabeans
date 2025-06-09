@@ -18,6 +18,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 32px;
+  padding: 0px 0px 48px 0px;
 }
 
 .hero-section img {
@@ -61,17 +62,19 @@ header {
 .about {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 350px;
+  grid-template-rows: 350px 350px;
   height: fit-content;
   width: 100%;
 }
 
-.about .coffee {
+.about .coffee,
+.about .area {
   display: contents; /* faz os filhos diretos participar do grid pai*/
 }
 
 .about .coffee img {
   display: grid;
+  height: 350px;
   width: 100%;
   grid-row: 1;
   grid-column: 1;
@@ -89,11 +92,11 @@ header {
   grid-column: 2 / span 2;
 }
 
-/* .about .area img {
+.about .area img {
   display: grid;
   width: 100%;
-  grid-row: 1;
-  grid-column: 1 / span 2;
+  grid-row: 2;
+  grid-column: 3;
   max-width: 100%;
   max-height: 350px;
   object-fit: cover;
@@ -103,7 +106,8 @@ header {
 .about .area .text {
   display: grid;
   width: 100%;
-  grid-row: 1;
-  grid-column: 3;
+  grid-row: 2;
+  grid-column: 1 / span 2;
   background: #c9b194;
-} */
+
+}
